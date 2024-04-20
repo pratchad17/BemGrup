@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+        .company-body {
+            margin: 0;
+            padding: 0;
+            size: A4 portrait;
+            height: 420px;
+
+        }
+
+        .company-body {
+            margin: 40px 40px 0 40px;
+        }
+
+        table td ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .company-info table {
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        .company-info table td {
+            vertical-align: top;
+        }
+
+        .company-info table td h1 {
+            margin: 0;
+        }
+
+
+        .company-info table td.company-info__logo {
+            text-align: right;
+        }
+
+
+        .billing-info table {
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        .billing-info table .billing-info__bill-from {
+            text-align: right;
+        }
+
+        .billing-details {
+            margin: 30px 0;
+        }
+
+        .billing-details table {
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        .billing-details table th:first-child {
+            text-align: left;
+        }
+
+        .billing-details table th:last-child {
+            text-align: right;
+        }
+
+        .billing-details table td:nth-child(2),
+        .billing-details table td:nth-child(3) {
+            text-align: center;
+        }
+
+        .billing-details table td:last-child {
+            text-align: right;
+        }
+
+        .additional-info {
+            margin: 30px 0;
+        }
+
+        .additional-info table {
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        .additional-info table tr>th:first-child {
+            text-align: left;
+        }
+
+        .additional-info table tr>th:last-child {
+            text-align: right;
+        }
+
+        .signature table {
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        .signature table a {
+            display: block;
+            width: 100%;
+            background-color: #284B63;
+            padding: 8px 0;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        footer {
+            background-color: #053858;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body class="company-body">
+    <main class="company">
+        <div class="company-info">
+            <table>
+                <tr>
+                    <td>
+                        <h1>Invoice</h1>
+                        <ul>
+                            <li>Invoice no: #A1I7701</li>
+                            <li>Date: January 3, 2023</li>
+                            <li>Due Date: March 11, 2024</li>
+                        </ul>
+                    </td>
+                    <td class="company-info__logo">
+                        <img src="./logoipsum-330 2.png" alt="" srcset="">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="billing-info">
+            <table>
+                <tr>
+                    <td class="billing-info__bill-to">
+                        <ul>
+                            <li>BILL TO</li>
+                            <li>David Bailey</li>
+                            <li>4517 Washington Ave,
+                                Manchester Kentucky 39495</li>
+                            <li>david@gmail.com</li>
+                            <li>+62 21 123456</li>
+                        </ul>
+                    </td>
+                    <td class="billing-info__bill-from">
+                        <ul>
+                            <li>BILL FROM</li>
+                            <li>ABC Solutions Ltd.</li>
+                            <li>4517 Washington Ave. Manchester Kentucky 39495</li>
+                            <li>abc@gmail.com</li>
+                            <li>+62 853 1234 5678</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="billing-details">
+            <table>
+                <tr>
+                    <th>Item Description</th>
+                    <th>Quantity</th>
+                    <th>Unit price</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td>Galaxy Tab S6 Lite - 2022 Edition</td>
+                    <td>2</td>
+                    <td>$200.00</td>
+                    <td>$200.00</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="additional-info">
+            <table>
+                <tr>
+                    <th>Additional Information</th>
+                    <th>Totals</th>
+                </tr>
+                <tr>
+                    <td>
+                        <h5>Terms & Conditions:</h5>
+                        <p>The payment must be made within 30 days.</p>
+                    </td>
+                    <td>
+                        <table>
+                            <tr>
+                                <td>Subtotal:</td>
+                                <td>$1600.00</td>
+                            </tr>
+                            <tr>
+                                <td>Tax(5%):</td>
+                                <td>$80.00</td>
+                            </tr>
+                            <tr>
+                                <td>Total:</td>
+                                <td>$1680.00</td>
+                            </tr>
+                            <tr>
+                                <td>Partial period:</td>
+                                <td>3 Months</td>
+                            </tr>
+                            <tr>
+                                <td>Each Months</td>
+                                <td>$560.00</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="signature">
+            <table>
+                <tr>
+                    <td>
+                        <img src="./path3035.png" alt="" srcset="">
+                        <p>Khalid Istiaq</p>
+                        <p>UX Designer, BemGroup</p>
+                    </td>
+                    <td>
+                        <a href="">
+                            Pay Now $1,680.00
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <h6>Created by <img src="./Frame 1261153880.png" alt="" srcset=""></h6>
+    </footer>
+</body>
+
+</html>
